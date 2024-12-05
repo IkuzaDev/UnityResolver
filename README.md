@@ -43,7 +43,7 @@
 
 #### (Initialization)
 > ``` c++
-> UnityResolve::Init(GetModuleHandle(L"GameAssembly.dll | mono.dll"), UnityResolve::Mode::Mono);
+> Resolve::Init(GetModuleHandle(L"GameAssembly.dll | mono.dll"), UnityResolve::Mode::Mono);
 > // Linux or Android
-> UnityResolve::Init(dlopen(L"il2cpp.so | mono.so", RTLD_NOW), UnityResolve::Mode::IL2CPP);
+> Resolve::Init(dlopen(L"il2cpp.so | mono.so", RTLD_NOW), UnityResolve::Mode::IL2CPP);
 >```
